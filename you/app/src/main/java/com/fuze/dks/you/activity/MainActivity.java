@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.fuze.dks.you.R;
 import com.fuze.dks.you.fragment.DashboardFragment;
+import com.fuze.dks.you.fragment.NearUserViewPagerFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.add(R.id.test,DashboardFragment.newInstance());
+        transaction.add(R.id.test, NearUserViewPagerFragment.newInstance());
         transaction.commit();
     }
 }
